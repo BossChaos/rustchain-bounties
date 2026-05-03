@@ -1,92 +1,49 @@
-# RustChain GitHub Action — Auto-Award RTC on PR Merge
+# Auto-Award RTC on PR Merge
 
-> Bounty #2864 — Reward: 20 RTC (~$2.00 USD)
+A reusable GitHub Action that automatically rewards RTC tokens to contributors when their PR is merged.
 
-A reusable GitHub Action that automatically awards RTC tokens to contributors when their PRs are merged.
+## Quick Start
 
-## Usage
-
-Add this to your repository:
+Use the action directly from BossChaos/rtc-reward-action:
 
 ```yaml
-# .github/workflows/rtc-reward.yml
-name: RTC Reward on PR Merge
-
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
 
 jobs:
-  reward:
+  award-rtc:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - uses: Scottcjn/rtc-reward-action@v1
+      - uses: BossChaos/rtc-reward-action@v1.0.0
         with:
-          node-url: https://50.28.86.131
-          amount: 5
-          wallet-from: project-fund
-          admin-key: ${{ secrets.RTC_ADMIN_KEY }}
+          rtc-amount: '20'
+          wallet-address: 'RTC6d1f27d28961279f1034d9561c2403697eb55602'
+          dry-run: 'true'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ## Features
 
-- Configurable RTC amount per merge
-- Reads contributor wallet from PR body or `.rtc-wallet` file
-- Posts comment on PR confirming payment
-- Supports dry-run mode for testing
-- Works with any GitHub repository
-
-## How It Works
-
-1. Triggered when a PR is merged
-2. Extracts the contributor's TRON wallet address from:
-   - PR body (look for `Wallet: T...` pattern)
-   - `.rtc-wallet` file in the repository root
-   - Contributor's GitHub bio
-3. Sends RTC tokens via the RustChain node API
-4. Posts a confirmation comment on the PR
+- ✅ **Configurable RTC amount** — set any reward amount
+- 👛 **Contributor wallet mapping** — JSON map of GitHub username → RTC wallet
+- 🧪 **Dry-run mode** — test without sending real tokens
+- 💬 **Auto-comment** — confirmation comment on merged PR
+- 🔄 **Reusable** — works across any RustChain repo
 
 ## Inputs
 
-| Input | Description | Required | Default |
-|-------|-------------|----------|---------|
-| `node-url` | RustChain node URL | No | `https://50.28.86.131` |
-| `amount` | RTC tokens to award | No | `5` |
-| `wallet-from` | Project fund wallet name | No | `project-fund` |
-| `admin-key` | Admin key for signing transactions | Yes | - |
-| `dry-run` | Test mode (no actual payment) | No | `false` |
+| Input | Description | Default |
+|---|---|---|
+| `rtc-amount` | Amount of RTC to award | `20` |
+| `wallet-address` | Default sender wallet | `RTC6d1f27d28961279f1034d9561c2403697eb55602` |
+| `dry-run` | Simulate transfer | `false` |
+| `github-token` | GitHub token | `${{ github.token }}` |
+| `contributor-wallet-map` | JSON: username → wallet | `{}` |
+| `comment-on-success` | Post PR comment | `true` |
+| `comment-template` | Custom comment template | Default |
 
-## Outputs
+## Full Documentation
 
-| Output | Description |
-|--------|-------------|
-| `transaction-id` | The transaction ID if payment was sent |
-| `contributor-wallet` | The wallet address that received payment |
-| `amount` | The amount of RTC sent |
-
-## Example with All Options
-
-```yaml
-- uses: Scottcjn/rtc-reward-action@v1
-  with:
-    node-url: https://50.28.86.131
-    amount: 10
-    wallet-from: community-fund
-    admin-key: ${{ secrets.RTC_ADMIN_KEY }}
-    dry-run: false
-```
-
-## Security
-
-- The admin key should be stored as a GitHub Secret, never in the workflow file
-- Only repository owners can configure the admin key
-- Dry-run mode recommended for initial testing
-
-## Wallet
-
-My RTC wallet for bounty payment: `TTvwY4Y1m5DXNSeoo1W1YuV948mtvNwgnD` (TRC20)
-
-## License
-
-MIT
+See: https://github.com/BossChaos/rtc-reward-action
