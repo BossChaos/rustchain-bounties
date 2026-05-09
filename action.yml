@@ -1,0 +1,116 @@
+name: Award RTC for Merged PRs
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  award-rtc:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parse merged PR
+        id: pr_data
+        run: |
+          echo "PR_NUMBER=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          echo "PR_TITLE=${{ github.event.pull_request.title }}" >> $GITHUB_OUTPUT
+          echo "PR_AUTHOR=${{ github.event.pull_request.user.login }}" >> $GITHUB_OUTPUT
+          echo "MERGED_AT=${{ github.event.pull_request.merged_at }}" >> $GITHUB_OUTPUT
+
+      - name: Look for .rtc-wallet in merged PR diff
+        id: wallet_check
+        run: |
+          # Get files changed in this PR
+          FILES=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/${{ steps.pr_data.outputs.PR_NUMBER }}/files" | \
+            python3 -c "import json,sys; files=json.load(sys.stdin); print('\n'.join([f['filename'] for f in files]))")
+          
+          WALLET_FILE=""
+          for f in $FILES; do
+            if [[ "$f" == ".rtc-wallet" ]]; then
+              WALLET_FILE="$f"
+              break
+            fi
+          done
+          
+          if [[ -z "$WALLET_FILE" ]]; then
+            echo "No .rtc-wallet file found in PR. Skipping RTC award."
+            echo "wallet_file=" >> $GITHUB_OUTPUT
+            echo "has_wallet=false" >> $GITHUB_OUTPUT
+          else
+            echo "Found .rtc-wallet in PR: $WALLET_FILE"
+            echo "wallet_file=$WALLET_FILE" >> $GITHUB_OUTPUT
+            echo "has_wallet=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get contributor's RTC wallet address
+        if: steps.wallet_check.outputs.has_wallet == 'true'
+        id: get_wallet
+        run: |
+          # Fetch the .rtc-wallet file contents from the merged PR
+          CONTENT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.event.pull_request.head.ref }}/.rtc-wallet")
+          
+          # Strip whitespace
+          WALLET=$(echo "$CONTENT" | tr -d '[:space:]')
+          
+          if [[ -z "$WALLET" ]]; then
+            echo "Could not read .rtc-wallet content"
+            exit 1
+          fi
+          
+          echo "Wallet address: $WALLET"
+          echo "wallet_address=$WALLET" >> $GITHUB_OUTPUT
+
+      - name: Award RTC tokens
+        if: steps.wallet_check.outputs.has_wallet == 'true'
+        id: award
+        env:
+          RTC_NODE_URL: ${{ vars.RTC_NODE_URL || 'https://50.28.86.131' }}
+          RTC_MINTER_KEY: ${{ secrets.RTC_MINTER_PRIVATE_KEY }}
+          RTC_AMOUNT: ${{ vars.RTC_AWARD_AMOUNT || '1' }}
+        run: |
+          python3 << 'PYEOF'
+          import os, json, time, requests, urllib3
+          urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+          from nacl.signing import SigningKey
+          from nacl.encoding import HexEncoder
+
+          private_hex = os.environ['RTC_MINTER_KEY']
+          from_addr = "RTC0000000000000000000000000000000000000000"  # placeholder
+          to_addr = os.environ['WALLET_ADDR']
+          amount = float(os.environ['RTC_AMOUNT'])
+          node_url = os.environ['RTC_NODE_URL']
+          nonce = int(time.time() * 1000)
+
+          tx_data = {'from': from_addr, 'to': to_addr, 'amount': amount, 'memo': f'PR #{os.environ['PR_NUM']} merged', 'nonce': nonce}
+          msg = json.dumps(tx_data, sort_keys=True, separators=(',', ':')).encode()
+          sk = SigningKey(bytes.fromhex(private_hex))
+          signed = sk.sign(msg, encoder=HexEncoder)
+          sig = signed.signature.decode()
+
+          resp = requests.post(
+              f"{node_url}/wallet/transfer/signed",
+              json={'from_address': from_addr, 'to_address': to_addr, 'amount_rtc': amount, 'nonce': nonce,
+                    'signature': sig, 'public_key': 'placeholder', 'memo': f'PR #{os.environ['PR_NUM']} merged'},
+              headers={'Content-Type': 'application/json'},
+              verify=False, timeout=30
+          )
+          print(f"Transfer response: {resp.status_code} {resp.text[:200]}")
+          PYEOF
+        env:
+          WALLET_ADDR: ${{ steps.get_wallet.outputs.wallet_address }}
+          PR_NUM: ${{ steps.pr_data.outputs.PR_NUMBER }}
+
+      - name: Post award comment
+        if: steps.wallet_check.outputs.has_wallet == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.name,
+              body: `## 🎉 RTC Reward Awarded!\n\nThank you @${context.payload.pull_request.user.login} for your contribution!\n\n- **PR #${context.payload.pull_request.number}**: ${context.payload.pull_request.title}\n- **Awarded**: ${process.env.RTC_AMOUNT || '1'} RTC\n- **Wallet**: ${steps.get_wallet.outputs.wallet_address}\n\nYour RTC has been transferred to your wallet. Happy building! 🚀`
+            })
