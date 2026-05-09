@@ -1,0 +1,65 @@
+{
+  "name": "rustchain-bounty-hunter",
+  "displayName": "RustChain Bounty Hunter",
+  "description": "VS Code Extension for RustChain - wallet balance, miner status, bounty browser, epoch countdown",
+  "version": "1.0.0",
+  "publisher": "BossChaos",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "activationEvents": ["*"],
+  "contributes": {
+    "configuration": {
+      "title": "RustChain",
+      "properties": {
+        "rustchain.nodeUrl": {
+          "type": "string",
+          "default": "https://50.28.86.131",
+          "description": "RustChain node URL"
+        },
+        "rustchain.walletName": {
+          "type": "string",
+          "default": "RTC6d1f27d28961279f1034d9561c2403697eb55602",
+          "description": "Your wallet name/address"
+        }
+      }
+    },
+    "viewsContainers": {
+      "activitybar": [{
+        "id": "rustchain-sidebar",
+        "title": "RustChain",
+        "icon": "media/icon.svg"
+      }]
+    },
+    "views": {
+      "rustchain-sidebar": [{
+        "id": "rustchain-bounties",
+        "name": "Bounties",
+        "icon": "media/bounty.svg"
+      }]
+    },
+    "commands": [{
+      "command": "rustchain.refreshBounties",
+      "title": "Refresh Bounties",
+      "icon": "$(refresh)"
+    }, {
+      "command": "rustchain.claimBounty",
+      "title": "Claim Bounty",
+      "icon": "$(rocket)"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.0",
+    "@types/vscode": "^1.75.0",
+    "@vscode/vsce": "^2.21.0",
+    "typescript": "^5.3.0"
+  }
+}
