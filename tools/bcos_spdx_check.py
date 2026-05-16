@@ -46,8 +46,8 @@ def _run(cmd: List[str]) -> str:
     return p.stdout
 
 
-def _git_diff_name_status(base_ref: str) -> List[Tuple[str, str]]:
-    out = _run(["git", "diff", "--name-status", f"{base_ref}...HEAD"])
+def _git_diff_name_status(base_ref: str, head_ref: str) -> List[Tuple[str, str]]:
+    out = _run(["git", "diff", "--name-status", f"{base_ref}...{head_ref}"])
     rows: List[Tuple[str, str]] = []
     for line in out.splitlines():
         parts = line.split("\t", 1)
@@ -90,12 +90,21 @@ def main(argv: List[str]) -> int:
         default=os.environ.get("BCOS_BASE_REF", ""),
         help="Git base ref to diff against (e.g. origin/main).",
     )
+    ap.add_argument(
+        "--head-ref",
+        default=os.environ.get("BCOS_HEAD_REF", ""),
+        help="Git head ref to diff from (defaults to HEAD).",
+    )
     args = ap.parse_args(argv)
 
     base_ref = (args.base_ref or "").strip()
     if not base_ref:
         base = os.environ.get("GITHUB_BASE_REF", "main")
         base_ref = f"origin/{base}"
+
+    head_ref = (args.head_ref or "").strip()
+    if not head_ref:
+        head_ref = "HEAD"
 
     repo_root = Path(__file__).resolve().parents[1]
     os.chdir(repo_root)
@@ -104,9 +113,10 @@ def main(argv: List[str]) -> int:
     try:
         _run(["git", "rev-parse", "--verify", base_ref])
     except Exception:
-        _run(["git", "fetch", "origin", base_ref.split("/", 1)[1], "--depth=1"])
+        base_name = base_ref.split("/", 1)[1] if "/" in base_ref else base_ref
+        _run(["git", "fetch", "origin", base_name, "--depth=1"])
 
-    changes = _git_diff_name_status(base_ref)
+    changes = _git_diff_name_status(base_ref, head_ref)
     added = [p for st, p in changes if st == "A"]
 
     failures: List[str] = []
@@ -133,4 +143,3 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
-
