@@ -85,10 +85,14 @@ jobs:
           # SBOM + license report (for evidence; does not change runtime)
           python -m pip install cyclonedx-bom pip-licenses
 
+      - name: Fetch PR head
+        run: |
+          git fetch origin refs/pull/${{ github.event.pull_request.number }}/head:pr-head
+
       - name: SPDX check (new files)
         run: |
           . .venv-bcos/bin/activate
-          python tools/bcos_spdx_check.py --base-ref "origin/${{ github.base_ref }}"
+          python tools/bcos_spdx_check.py --base-ref origin/${{ github.base_ref }} --head-ref pr-head
 
       - name: Generate SBOM (environment)
         run: |
@@ -157,4 +161,3 @@ jobs:
         with:
           name: bcos-artifacts
           path: artifacts/
-
