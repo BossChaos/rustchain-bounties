@@ -577,3 +577,32 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-13 (May 21-22) | 116 | ~837 |
 | Batch 14 (May 22) | 19 | ~156 |
 | **Grand Total** | **297** | **~2060 RTC ~$206 USD** |
+
+
+---
+
+## Batch 15 — May 22 Historical Scan 5200-5400 (8 high-value reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5210](https://github.com/Scottcjn/Rustchain/pull/5210) | Wallet review UI auth + mempool test refactoring | 5 |
+| [#5260](https://github.com/Scottcjn/Rustchain/pull/5260) | Wallet balance endpoint URL fix (path traversal prevention) | 8 |
+| [#5265](https://github.com/Scottcjn/Rustchain/pull/5265) | Faucet TOCTOU race condition fix (BEGIN IMMEDIATE) | 15 |
+| [#5360](https://github.com/Scottcjn/Rustchain/pull/5360) | Withdrawal broadcast reconciliation (double-spend prevention) | 15 |
+| [#5365](https://github.com/Scottcjn/Rustchain/pull/5365) | Lock release endpoint type validation | 8 |
+| [#5375](https://github.com/Scottcjn/Rustchain/pull/5375) | Anti-double-mining connection + test isolation | 5 |
+| [#5385](https://github.com/Scottcjn/Rustchain/pull/5385) | UTXO coinbase fixture validation + MAX cap | 5 |
+| [#5390](https://github.com/Scottcjn/Rustchain/pull/5390) | Wallet review recent limit validation | 5 |
+
+**Batch 15 Subtotal: ~66 RTC (8 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-14 (May 21-22) | 135 | ~993 |
+| Batch 15 (May 22) | 8 | ~66 |
+| **Grand Total** | **305** | **~2126 RTC ~$213 USD** |
