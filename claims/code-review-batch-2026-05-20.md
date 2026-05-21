@@ -510,3 +510,30 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-11 (May 21-22) | 104 | ~756 |
 | Batch 12 (May 22) | 6 | ~46 |
 | **Grand Total** | **272** | **~1869 RTC ~$187 USD** |
+
+
+---
+
+## Batch 13 — May 22 Gap Fill (6 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5601](https://github.com/Scottcjn/Rustchain/pull/5601) | Relationship API type validation (JSON object checks) | 5 |
+| [#5603](https://github.com/Scottcjn/Rustchain/pull/5603) | Faucet drip type validation (wallet/username strings) | 5 |
+| [#5605](https://github.com/Scottcjn/Rustchain/pull/5605) | Relic reserve type validation (consistent fix) | 5 |
+| [#5610](https://github.com/Scottcjn/Rustchain/pull/5610) | Contributor approval auth hardening (GET->POST, HMAC) | 10 |
+| [#5620](https://github.com/Scottcjn/Rustchain/pull/5620) | Attestation nested fingerprint type validation | 5 |
+| [#5630](https://github.com/Scottcjn/Rustchain/pull/5630) | API miners pagination integer validation | 5 |
+
+**Batch 13 Subtotal: ~35 RTC (6 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-12 (May 21-22) | 110 | ~802 |
+| Batch 13 (May 22) | 6 | ~35 |
+| **Grand Total** | **278** | **~1904 RTC ~$190 USD** |
