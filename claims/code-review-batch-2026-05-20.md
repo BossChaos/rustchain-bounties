@@ -641,3 +641,39 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-15 (May 21-22) | 143 | ~1059 |
 | Batch 16 (May 22) | 14 | ~111 |
 | **Grand Total** | **319** | **~2237 RTC ~$224 USD** |
+
+
+---
+
+## Batch 17 — May 22 Historical Scan 4800-5000 (15 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#4805](https://github.com/Scottcjn/Rustchain/pull/4805) | Beacon join coinbase immutability (payment takeover fix) | 15 |
+| [#4860](https://github.com/Scottcjn/Rustchain/pull/4860) | Mutating challenge proof hash verification | 12 |
+| [#4865](https://github.com/Scottcjn/Rustchain/pull/4865) | BCOS badge generator XSS prevention | 15 |
+| [#4905](https://github.com/Scottcjn/Rustchain/pull/4905) | Keeper Explorer + Faucet (bounty 1000 RUST) | 8 |
+| [#4920](https://github.com/Scottcjn/Rustchain/pull/4920) | Governance delegation authenticated_wallet | 15 |
+| [#4930](https://github.com/Scottcjn/Rustchain/pull/4930) | Scott notification hardcoded credential removal | 15 |
+| [#4960](https://github.com/Scottcjn/Rustchain/pull/4960) | OTC Ed25519 wallet authentication | 12 |
+| [#4965](https://github.com/Scottcjn/Rustchain/pull/4965) | Payout ledger admin auth | 15 |
+| [#4990](https://github.com/Scottcjn/Rustchain/pull/4990) | BCOS badge generator admin auth | 8 |
+| [#4970](https://github.com/Scottcjn/Rustchain/pull/4970) | BoTTube Embeddable Player Widget | 5 |
+| [#4915](https://github.com/Scottcjn/Rustchain/pull/4915) | Contributors DB migration system | 5 |
+| [#4875](https://github.com/Scottcjn/Rustchain/pull/4875) | DB migration tool tests | 3 |
+| [#4895](https://github.com/Scottcjn/Rustchain/pull/4895) | Webhook server admin tests | 3 |
+| [#4910](https://github.com/Scottcjn/Rustchain/pull/4910) | Star checker tests | 3 |
+| [#4925](https://github.com/Scottcjn/Rustchain/pull/4925) | Packet radio validator tests | 3 |
+
+**Batch 17 Subtotal: ~137 RTC (15 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-16 (May 21-22) | 157 | ~1170 |
+| Batch 17 (May 22) | 15 | ~137 |
+| **Grand Total** | **334** | **~2374 RTC ~$237 USD** |
