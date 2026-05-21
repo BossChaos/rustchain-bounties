@@ -128,3 +128,50 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
 | Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
 | **Grand Total** | **177** | **44** | **133** | **~1227 RTC ≈ $123 USD** |
+
+
+---
+
+## Batch 3 — May 21 Afternoon (15 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5670](https://github.com/Scottcjn/Rustchain/pull/5670) | Contributor registry: CSRF protection + input validation + CSRF tokens + DB context managers | 20 |
+| [#5675](https://github.com/Scottcjn/Rustchain/pull/5675) | OTC bridge fund-trap: admin key auth + rtc_transfer_from_worker + payout alerts | 20 |
+| [#5662](https://github.com/Scottcjn/Rustchain/pull/5662) | Admin auth for contributor approvals + POST-only method + HMAC timing-safe comparison | 15 |
+| [#5668](https://github.com/Scottcjn/Rustchain/pull/5668) | Registration key enforcement + GitHub username regex + wallet redaction | 15 |
+| [#5686](https://github.com/Scottcjn/Rustchain/pull/5686) | Flask debug=True → False on 5 public entrypoints — prevents RCE | 15 |
+| [#5653](https://github.com/Scottcjn/Rustchain/pull/5653) | Remove plaintext P2P demo peers + HTTPS enforcement for remote peers | 15 |
+| [#5674](https://github.com/Scottcjn/Rustchain/pull/5674) | OUI deny admin payload validation — type checking before string ops | 10 |
+| [#5689](https://github.com/Scottcjn/Rustchain/pull/5689) | Bridge API payload validation — _text_payload_field + dict type check | 10 |
+| [#5690](https://github.com/Scottcjn/Rustchain/pull/5690) | Beacon API JSON body validation — _json_object_body + _required_text_field | 10 |
+| [#5687](https://github.com/Scottcjn/Rustchain/pull/5687) | OTC bridge order creation validation — require_json_object + ttl_seconds_field | 10 |
+| [#5688](https://github.com/Scottcjn/Rustchain/pull/5688) | Airdrop v2 payload validation — amount_uwrtc_field + antisybil protection | 10 |
+
+**Batch 3 High-Value Subtotal: ~150 RTC (11 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5673](https://github.com/Scottcjn/Rustchain/pull/5673) | Sophia governor recent limit validation + cap at max_recent_rows | 3 |
+| [#5678](https://github.com/Scottcjn/Rustchain/pull/5678) | Python SDK signed transfer API improvements (memo, chain_id, float amounts) | 3 |
+| [#5683](https://github.com/Scottcjn/Rustchain/pull/5683) | Rent-a-Relic server payload validation + math.isfinite check | 3 |
+| [#5682](https://github.com/Scottcjn/Rustchain/pull/5682) | GPU render endpoint text field validation + optional field handling | 3 |
+
+**Batch 3 Standard Subtotal: ~12 RTC (4 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
+| Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
+| **Grand Total** | **192** | **55** | **137** | **~1389 RTC ≈ $139 USD** |
