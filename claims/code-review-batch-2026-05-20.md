@@ -258,3 +258,45 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 4 (May 21 late PM) | 9 | 7 | 2 | ~72 |
 | Batch 5 (May 21 evening) | 7 | 5 | 2 | ~85 |
 | **Grand Total** | **208** | **67** | **141** | **~1546 RTC ≈ $155 USD** |
+
+
+---
+
+## Batch 6 — May 21 Night (7 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5928](https://github.com/Scottcjn/Rustchain/pull/5928) | GPU fingerprint VM detection (5 vectors: DMI, hypervisor, CPUID, IOMMU, PCI) + ROCm support | 20 |
+| [#5974](https://github.com/Scottcjn/Rustchain/pull/5974) | Offline epoch catch-up with vote certificates + signature verification | 20 |
+| [#5933](https://github.com/Scottcjn/Rustchain/pull/5933) | Agent Miner RPC: auth + rate limiting + IP allowlisting + webhook validation | 15 |
+| [#6000](https://github.com/Scottcjn/Rustchain/pull/6000) | Hall of Rust error redaction — 7 endpoints, prevents internal detail leak | 8 |
+
+**Batch 6 High-Value Subtotal: ~63 RTC (4 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5901](https://github.com/Scottcjn/Rustchain/pull/5901) | Relic market reserve field validation — _required_string_field + _positive_number_field | 3 |
+| [#5911](https://github.com/Scottcjn/Rustchain/pull/5911) | Machine passport JSON body validation — get_optional_json_object | 3 |
+| [#5943](https://github.com/Scottcjn/Rustchain/pull/5943) | RIP-309 canonical fingerprint rotation — centralized config function | 3 |
+
+**Batch 6 Standard Subtotal: ~9 RTC (3 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
+| Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
+| Batch 4 (May 21 late PM) | 9 | 7 | 2 | ~72 |
+| Batch 5 (May 21 evening) | 7 | 5 | 2 | ~85 |
+| Batch 6 (May 21 night) | 7 | 4 | 3 | ~72 |
+| **Grand Total** | **215** | **71** | **144** | **~1618 RTC ≈ $162 USD** |
