@@ -405,3 +405,39 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-8 (May 21-22) | 54 | ~527 |
 | Batch 9 (May 22 late) | 14 | ~87 |
 | **Grand Total** | **230** | **~1681 RTC ≈ $168 USD** |
+
+
+---
+
+## Batch 10 — May 22 Late (15 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5840](https://github.com/Scottcjn/Rustchain/pull/5840) | Governor inbox bearer token → **hmac.compare_digest() constant-time comparison** (timing attack fix) | 20 |
+| [#5845](https://github.com/Scottcjn/Rustchain/pull/5845) | Feed limit parameter blank string default handling | 3 |
+| [#5846](https://github.com/Scottcjn/Rustchain/pull/5846) | Reputation eligibility / leaderboard empty param defaults | 3 |
+| [#5847](https://github.com/Scottcjn/Rustchain/pull/5847) | Bridge dashboard transactions empty limit default | 3 |
+| [#5848](https://github.com/Scottcjn/Rustchain/pull/5848) | Explorer endpoints empty pagination defaults | 3 |
+| [#5849](https://github.com/Scottcjn/Rustchain/pull/5849) | API miners empty pagination defaults | 3 |
+| [#5850](https://github.com/Scottcjn/Rustchain/pull/5850) | Discord leaderboard miner payload normalization | 5 |
+| [#5855](https://github.com/Scottcjn/Rustchain/pull/5855) | Nginx CORS + security headers for /headers/ route | 5 |
+| [#5860](https://github.com/Scottcjn/Rustchain/pull/5860) | Prometheus metrics miner payload normalization | 5 |
+| [#5865](https://github.com/Scottcjn/Rustchain/pull/5865) | Chart widget miner payload normalization | 5 |
+| [#5870](https://github.com/Scottcjn/Rustchain/pull/5870) | RIP node sync miner payload normalization | 5 |
+| [#5875](https://github.com/Scottcjn/Rustchain/pull/5875) | Miner dashboard → **textContent XSS prevention** | 8 |
+| [#5880](https://github.com/Scottcjn/Rustchain/pull/5880) | Stats dashboard miner normalization | 3 |
+| [#5885](https://github.com/Scottcjn/Rustchain/pull/5885) | DB verify table/column schema checks | 5 |
+| [#5890](https://github.com/Scottcjn/Rustchain/pull/5890) | RustChain client miner payload normalization (sync + async) | 5 |
+
+**Batch 10 Subtotal: ~81 RTC (15 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-9 (May 21-22) | 68 | ~574 |
+| Batch 10 (May 22) | 15 | ~81 |
+| **Grand Total** | **245** | **~1722 RTC ≈ $172 USD** |
