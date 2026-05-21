@@ -677,3 +677,41 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-16 (May 21-22) | 157 | ~1170 |
 | Batch 17 (May 22) | 15 | ~137 |
 | **Grand Total** | **334** | **~2374 RTC ~$237 USD** |
+
+
+---
+
+## Batch 18 — May 22 Historical Scan 4600-4800 (17 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#4610](https://github.com/Scottcjn/Rustchain/pull/4610) | Moltbook agent keys moved to env vars (6 hardcoded keys removed) | 15 |
+| [#4625](https://github.com/Scottcjn/Rustchain/pull/4625) | API CSRF protection + CORS origin restriction | 15 |
+| [#4645](https://github.com/Scottcjn/Rustchain/pull/4645) | Block validator CSPRNG (secrets module replaces random) | 12 |
+| [#4650](https://github.com/Scottcjn/Rustchain/pull/4650) | Pending transfer BEGIN IMMEDIATE (race condition fix) | 15 |
+| [#4620](https://github.com/Scottcjn/Rustchain/pull/4620) | RPC API malformed JSON body handling | 8 |
+| [#4660](https://github.com/Scottcjn/Rustchain/pull/4660) | Proxy upstream response forwarding fix | 5 |
+| [#4665](https://github.com/Scottcjn/Rustchain/pull/4665) | PoA block validator CSPRNG (Rust core version) | 10 |
+| [#4675](https://github.com/Scottcjn/Rustchain/pull/4675) | UTXO transfer nanoRTC precision fix (3 nanoRTC) | 10 |
+| [#4685](https://github.com/Scottcjn/Rustchain/pull/4685) | Attestation miner_id field validation | 8 |
+| [#4765](https://github.com/Scottcjn/Rustchain/pull/4765) | Harden the Chain security assessment | 10 |
+| [#4795](https://github.com/Scottcjn/Rustchain/pull/4795) | GPU Render Protocol escrow secret separation | 8 |
+| [#4600](https://github.com/Scottcjn/Rustchain/pull/4600) | Rust score current UTC year | 3 |
+| [#4635](https://github.com/Scottcjn/Rustchain/pull/4635) | Hall of Rust current UTC year | 3 |
+| [#4700](https://github.com/Scottcjn/Rustchain/pull/4700) | PoA demo script current_year fix | 3 |
+| [#4750](https://github.com/Scottcjn/Rustchain/pull/4750) | CRT package imports + encoding | 3 |
+| [#4740](https://github.com/Scottcjn/Rustchain/pull/4740) | Security hardener tool | 3 |
+| [#4745](https://github.com/Scottcjn/Rustchain/pull/4745) | Block reward negative height validation | 3 |
+
+**Batch 18 Subtotal: ~134 RTC (17 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-17 (May 21-22) | 172 | ~1307 |
+| Batch 18 (May 22) | 17 | ~134 |
+| **Grand Total** | **351** | **~2508 RTC ~$251 USD** |
