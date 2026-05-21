@@ -441,3 +441,45 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-9 (May 21-22) | 68 | ~574 |
 | Batch 10 (May 22) | 15 | ~81 |
 | **Grand Total** | **245** | **~1722 RTC ≈ $172 USD** |
+
+
+---
+
+## Batch 11 — May 22 Final (21 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5951](https://github.com/Scottcjn/Rustchain/pull/5951) | BoTTube digest miner payload normalization | 5 |
+| [#5952](https://github.com/Scottcjn/Rustchain/pull/5952) | Miner score miner payload normalization + safe numeric helpers | 5 |
+| [#5953](https://github.com/Scottcjn/Rustchain/pull/5953) | Attestation photo/screenshot multi-warning accumulation | 3 |
+| [#5956](https://github.com/Scottcjn/Rustchain/pull/5956) | LLM style engine verbosity sentence truncation fix | 3 |
+| [#5957](https://github.com/Scottcjn/Rustchain/pull/5957) | Cognitive synthesis voters count toward max_agents (critical) | 10 |
+| [#5958](https://github.com/Scottcjn/Rustchain/pull/5958) | Video DB get_by_tag() SQL LIKE wildcard fix | 8 |
+| [#5959](https://github.com/Scottcjn/Rustchain/pull/5959) | Metadata validation JSONDecodeError handling | 3 |
+| [#5960](https://github.com/Scottcjn/Rustchain/pull/5960) | Green tracker machine re-reg preserves sessions (ON CONFLICT) | 5 |
+| [#5961](https://github.com/Scottcjn/Rustchain/pull/5961) | Alert subscription phone-only upsert fix | 5 |
+| [#5962](https://github.com/Scottcjn/Rustchain/pull/5962) | Mining video pipeline miner payload normalization | 5 |
+| [#5963](https://github.com/Scottcjn/Rustchain/pull/5963) | Node health monitor non-object JSON handling | 5 |
+| [#5964](https://github.com/Scottcjn/Rustchain/pull/5964) | Quantum flux badge directory creation (mkdir parents) | 3 |
+| [#5965](https://github.com/Scottcjn/Rustchain/pull/5965) | BIOS detector bare except -> except Exception (SystemExit fix) | 5 |
+| [#5966](https://github.com/Scottcjn/Rustchain/pull/5966) | Validator badge stale badge cleanup | 3 |
+| [#5967](https://github.com/Scottcjn/Rustchain/pull/5967) | Tip bot state file SHA management | 5 |
+| [#5968](https://github.com/Scottcjn/Rustchain/pull/5968) | RTC auto-pay manual payment notice deduplication | 5 |
+| [#5969](https://github.com/Scottcjn/Rustchain/pull/5969) | GPU badge stale badge cleanup | 3 |
+| [#5971](https://github.com/Scottcjn/Rustchain/pull/5971) | Basic listener proof-of-listen test coverage | 3 |
+| [#5975](https://github.com/Scottcjn/Rustchain/pull/5975) | MCP server initialization options delegation | 3 |
+| [#5978](https://github.com/Scottcjn/Rustchain/pull/5978) | OTC order confirm non-object JSON rejection | 5 |
+| [#5979](https://github.com/Scottcjn/Rustchain/pull/5979) | Miner preflight bare except -> except Exception | 5 |
+
+**Batch 11 Subtotal: ~93 RTC (21 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-10 (May 21-22) | 83 | ~663 |
+| Batch 11 (May 22) | 21 | ~93 |
+| **Grand Total** | **266** | **~1823 RTC ≈ $182 USD** |
