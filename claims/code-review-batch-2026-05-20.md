@@ -370,3 +370,38 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-7 (May 21-22) | 49 | ~473 |
 | Batch 8 (May 22 mid) | 5 | ~27 |
 | **Grand Total** | **216** | **~1567 RTC ≈ $157 USD** |
+
+
+---
+
+## Batch 9 — May 22 Mid-Late (14 reviews: 7a + 7b)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5755](https://github.com/Scottcjn/Rustchain/pull/5755) | Reputation eligibility detailed reason strings | 3 |
+| [#5760](https://github.com/Scottcjn/Rustchain/pull/5760) | Mempool size bound regression tests — tx_id, output text, metadata | 10 |
+| [#5765](https://github.com/Scottcjn/Rustchain/pull/5765) | Beacon submit non-object JSON rejection | 8 |
+| [#5770](https://github.com/Scottcjn/Rustchain/pull/5770) | Miner header key / ingest signed header JSON validation | 8 |
+| [#5780](https://github.com/Scottcjn/Rustchain/pull/5780) | Wallet review UI POST redirect fix | 3 |
+| [#5785](https://github.com/Scottcjn/Rustchain/pull/5785) | Bridge API void/update_external non-object JSON rejection | 8 |
+| [#5790](https://github.com/Scottcjn/Rustchain/pull/5790) | Miner dashboard safeNumber + XSS prevention | 6 |
+| [#5795](https://github.com/Scottcjn/Rustchain/pull/5795) | Mining dashboard comprehensive data normalization | 6 |
+| [#5800](https://github.com/Scottcjn/Rustchain/pull/5800) | Miner dashboard withdrawal normalization + deduplication | 5 |
+| [#5810](https://github.com/Scottcjn/Rustchain/pull/5810) | Network topology graph data normalization | 5 |
+| [#5815](https://github.com/Scottcjn/Rustchain/pull/5815) | Mining stats dashboard comprehensive normalization | 6 |
+| [#5820](https://github.com/Scottcjn/Rustchain/pull/5820) | Mac miner fingerprint binding aliases | 3 |
+| [#5825](https://github.com/Scottcjn/Rustchain/pull/5825) | BCOS directory pagination validation regression tests | 8 |
+| [#5835](https://github.com/Scottcjn/Rustchain/pull/5835) | Miner header key hex validation + type checks | 8 |
+
+**Batch 9 Subtotal: ~87 RTC (14 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-8 (May 21-22) | 54 | ~527 |
+| Batch 9 (May 22 late) | 14 | ~87 |
+| **Grand Total** | **230** | **~1681 RTC ≈ $168 USD** |
