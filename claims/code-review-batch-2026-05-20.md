@@ -537,3 +537,43 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-12 (May 21-22) | 110 | ~802 |
 | Batch 13 (May 22) | 6 | ~35 |
 | **Grand Total** | **278** | **~1904 RTC ~$190 USD** |
+
+
+---
+
+## Batch 14 — May 22 Historical Scan 5400-5600 (19 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5415](https://github.com/Scottcjn/Rustchain/pull/5415) | Epoch enroll JSON body type validation | 5 |
+| [#5425](https://github.com/Scottcjn/Rustchain/pull/5425) | Governor recent limit parsing with bounds | 5 |
+| [#5430](https://github.com/Scottcjn/Rustchain/pull/5430) | Sync admin auth null/empty key bypass fix | 15 |
+| [#5450](https://github.com/Scottcjn/Rustchain/pull/5450) | Explorer upstream error info leakage | 10 |
+| [#5460](https://github.com/Scottcjn/Rustchain/pull/5460) | P2P exporter default URL unset | 5 |
+| [#5480](https://github.com/Scottcjn/Rustchain/pull/5480) | Bridge Base/EVM address strict validation | 15 |
+| [#5490](https://github.com/Scottcjn/Rustchain/pull/5490) | UTXO mempool ordering tests | 5 |
+| [#5495](https://github.com/Scottcjn/Rustchain/pull/5495) | WebSocket mining stats subscription tests | 5 |
+| [#5500](https://github.com/Scottcjn/Rustchain/pull/5500) | Installer dual checksum verification | 10 |
+| [#5530](https://github.com/Scottcjn/Rustchain/pull/5530) | Auto-bounty endpoint unreachable detection | 5 |
+| [#5540](https://github.com/Scottcjn/Rustchain/pull/5540) | Explorer upstream error hiding (502) | 10 |
+| [#5545](https://github.com/Scottcjn/Rustchain/pull/5545) | Proxy upstream error hiding | 10 |
+| [#5550](https://github.com/Scottcjn/Rustchain/pull/5550) | Proxy exception masking | 10 |
+| [#5560](https://github.com/Scottcjn/Rustchain/pull/5560) | Failed fingerprint weight zero (consensus) | 15 |
+| [#5565](https://github.com/Scottcjn/Rustchain/pull/5565) | Airdrop type validation + amount checks | 10 |
+| [#5570](https://github.com/Scottcjn/Rustchain/pull/5570) | Rewards settle schema init (RIP-200) | 8 |
+| [#5580](https://github.com/Scottcjn/Rustchain/pull/5580) | Node URL to rustchain.org constant | 5 |
+| [#5590](https://github.com/Scottcjn/Rustchain/pull/5590) | README bridge URL update | 3 |
+| [#5595](https://github.com/Scottcjn/Rustchain/pull/5595) | Withdrawal orphan recovery fix | 10 |
+
+**Batch 14 Subtotal: ~156 RTC (19 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-13 (May 21-22) | 116 | ~837 |
+| Batch 14 (May 22) | 19 | ~156 |
+| **Grand Total** | **297** | **~2060 RTC ~$206 USD** |
