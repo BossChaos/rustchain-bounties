@@ -53,3 +53,40 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 - **Estimated reward:** ~727 RTC
 - **Cumulative (both sessions):** 162 PR reviews
 - **Wallet:** `RTC6d1f27d28961279f1034d9561c2403697eb55602`
+
+---
+
+## Session 3 — May 21 Morning (8 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5702](https://github.com/Scottcjn/Rustchain/pull/5702) | Attestation validation BEFORE nonce consumption — prevents reward bypass via incomplete fingerprint | 15 |
+| [#5696](https://github.com/Scottcjn/Rustchain/pull/5696) | UTXO dust threshold enforcement — prevents sub-dust spam outputs | 15 |
+| [#5693](https://github.com/Scottcjn/Rustchain/pull/5693) | Beacon API type confusion hardening — bool bypass, NaN/Infinity rejection | 12 |
+| [#5684](https://github.com/Scottcjn/Rustchain/pull/5684) | Server proxy upstream 5xx error redaction — prevents internal error disclosure | 12 |
+| [#5677](https://github.com/Scottcjn/Rustchain/pull/5677) | GPU render DB error info-leak — str(e) replaced with generic message | 12 |
+| [#5694](https://github.com/Scottcjn/Rustchain/pull/5694) | Wallet CLI keystore 0600 permissions + atomic write — prevents key theft | 12 |
+
+**Session 3 High-Value Subtotal: ~78 RTC (6 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5701](https://github.com/Scottcjn/Rustchain/pull/5701) | Fuzz runner console encoding fix — prevents UnicodeEncodeError on non-UTF-8 terminals | 3 |
+| [#5896](https://github.com/Scottcjn/Rustchain/pull/5896) | Miner alerts row normalization — filters non-dict API responses for resilience | 3 |
+
+**Session 3 Standard Subtotal: ~6 RTC (2 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| **Grand Total** | **170** | **39** | **131** | **~1151 RTC ≈ $115 USD** |
