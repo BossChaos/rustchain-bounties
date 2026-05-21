@@ -344,3 +344,29 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 6 (May 21 night) | 7 | 4 | 3 | ~72 |
 | Batch 7 (May 22 early) | 11 | 7 | 4 | ~82 |
 | **Grand Total** | **211** | **67** | **144** | **~1540 RTC ≈ $154 USD** |
+
+
+---
+
+## Batch 8 — May 22 Mid (5 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5984](https://github.com/Scottcjn/Rustchain/pull/5984) | Health check items envelope support + uptime formatting | 5 |
+| [#5986](https://github.com/Scottcjn/Rustchain/pull/5986) | Setup miner --help CLI + test coverage | 3 |
+| [#5988](https://github.com/Scottcjn/Rustchain/pull/5988) | MCP server positive integer arg parsing — parse_positive_int_arg | 8 |
+| [#5992](https://github.com/Scottcjn/Rustchain/pull/5992) | RTC auto-bounty transfer JSON validation + test coverage | 8 |
+| [#5995](https://github.com/Scottcjn/Rustchain/pull/5995) | Fork choice graph dashboard static file serving fix | 3 |
+
+**Batch 8 Subtotal: ~27 RTC (5 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-7 (May 21-22) | 49 | ~473 |
+| Batch 8 (May 22 mid) | 5 | ~27 |
+| **Grand Total** | **216** | **~1567 RTC ≈ $157 USD** |
