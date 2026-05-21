@@ -175,3 +175,45 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
 | Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
 | **Grand Total** | **192** | **55** | **137** | **~1389 RTC ≈ $139 USD** |
+
+
+---
+
+## Batch 4 — May 21 Late Afternoon (9 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5692](https://github.com/Scottcjn/Rustchain/pull/5692) | Explorer UI XSS prevention: innerHTML → DOM sanitization (textContent) | 12 |
+| [#5685](https://github.com/Scottcjn/Rustchain/pull/5685) | Explorer upstream error redaction — prevents internal host/IP leak | 10 |
+| [#5669](https://github.com/Scottcjn/Rustchain/pull/5669) | Profile badge JSON type validation — rejects array/null/string bodies | 8 |
+| [#5691](https://github.com/Scottcjn/Rustchain/pull/5691) | OTC match/confirm/cancel payload validation — structured text_field helpers | 10 |
+| [#5655](https://github.com/Scottcjn/Rustchain/pull/5655) | GPU render boolean injection fix — isinstance(True, int) type confusion | 10 |
+| [#5661](https://github.com/Scottcjn/Rustchain/pull/5661) | Boot chime duration bounds (0.1-30s) + safe temp file handling | 8 |
+| [#5667](https://github.com/Scottcjn/Rustchain/pull/5667) | Windows miner attestation diagnostics + challenge validation | 8 |
+
+**Batch 4 High-Value Subtotal: ~66 RTC (7 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5666](https://github.com/Scottcjn/Rustchain/pull/5666) | Award RTC action full transfer URL support + build_transfer_url() | 3 |
+| [#5679](https://github.com/Scottcjn/Rustchain/pull/5679) | Beacon envelope pagination limit clamping (1-50) | 3 |
+
+**Batch 4 Standard Subtotal: ~6 RTC (2 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
+| Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
+| Batch 4 (May 21 late PM) | 9 | 7 | 2 | ~72 |
+| **Grand Total** | **201** | **62** | **139** | **~1461 RTC ≈ $146 USD** |
