@@ -483,3 +483,30 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-10 (May 21-22) | 83 | ~663 |
 | Batch 11 (May 22) | 21 | ~93 |
 | **Grand Total** | **266** | **~1823 RTC ≈ $182 USD** |
+
+
+---
+
+## Batch 12 — May 22 Late (6 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5700](https://github.com/Scottcjn/Rustchain/pull/5700) | Relic reserve endpoint type validation (bool/non-string rejection) | 8 |
+| [#5705](https://github.com/Scottcjn/Rustchain/pull/5705) | Signature bundle validation hardening (crypto) | 10 |
+| [#5720](https://github.com/Scottcjn/Rustchain/pull/5720) | Governor review maintenance limit normalization | 5 |
+| [#5725](https://github.com/Scottcjn/Rustchain/pull/5725) | Linux miner Windows platform support | 3 |
+| [#5740](https://github.com/Scottcjn/Rustchain/pull/5740) | Anti-double-mining per-epoch weight snapshot (reward correctness) | 10 |
+| [#5750](https://github.com/Scottcjn/Rustchain/pull/5750) | Epoch commit handler with strict type validation (consensus) | 10 |
+
+**Batch 12 Subtotal: ~46 RTC (6 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-11 (May 21-22) | 104 | ~756 |
+| Batch 12 (May 22) | 6 | ~46 |
+| **Grand Total** | **272** | **~1869 RTC ~$187 USD** |
