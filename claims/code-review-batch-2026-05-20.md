@@ -217,3 +217,44 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
 | Batch 4 (May 21 late PM) | 9 | 7 | 2 | ~72 |
 | **Grand Total** | **201** | **62** | **139** | **~1461 RTC ≈ $146 USD** |
+
+
+---
+
+## Batch 5 — May 21 Evening (7 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5906](https://github.com/Scottcjn/Rustchain/pull/5906) | P2P gossip payload validation — 7 constants + recursive depth/key/size bounds | 20 |
+| [#5980](https://github.com/Scottcjn/Rustchain/pull/5980) | Pending confirmation: savepoint isolation + balance schema validation + race condition fix | 20 |
+| [#5983](https://github.com/Scottcjn/Rustchain/pull/5983) | Atomic P2P dedup: signature-first ordering + rollback on invalid | 15 |
+| [#5939](https://github.com/Scottcjn/Rustchain/pull/5939) | Epoch settlement: validate /epoch response shape + boolean check + zero epoch guard | 12 |
+| [#5994](https://github.com/Scottcjn/Rustchain/pull/5994) | Attestation fingerprint metric validation — _attest_metric_float + boolean rejection | 12 |
+
+**Batch 5 High-Value Subtotal: ~79 RTC (5 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5902](https://github.com/Scottcjn/Rustchain/pull/5902) | Genesis validator: non-object JSON rejection + _string_field helper | 3 |
+| [#5904](https://github.com/Scottcjn/Rustchain/pull/5904) | BCOS badge generator JSON validation + scalar field type checks | 3 |
+
+**Batch 5 Standard Subtotal: ~6 RTC (2 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
+| Batch 3 (May 21 PM) | 15 | 11 | 4 | ~162 |
+| Batch 4 (May 21 late PM) | 9 | 7 | 2 | ~72 |
+| Batch 5 (May 21 evening) | 7 | 5 | 2 | ~85 |
+| **Grand Total** | **208** | **67** | **141** | **~1546 RTC ≈ $155 USD** |
