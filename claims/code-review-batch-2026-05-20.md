@@ -764,3 +764,42 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-18 (May 21-22) | 189 | ~1441 |
 | Batch 19 (May 22) | 28 | ~208 |
 | **Grand Total** | **379** | **~2716 RTC ~$272 USD** |
+
+
+---
+
+## Batch 20 — May 22 Historical Scan 4200-4400 (17 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#4200](https://github.com/Scottcjn/Rustchain/pull/4200) | Passport admin key hmac.compare_digest + connection leak fix | 15 |
+| [#4215](https://github.com/Scottcjn/Rustchain/pull/4215) | Attestation challenge IP rate limiting (DoS prevention) | 12 |
+| [#4225](https://github.com/Scottcjn/Rustchain/pull/4225) | Bridge error info leakage fix (logger.exception) | 8 |
+| [#4295](https://github.com/Scottcjn/Rustchain/pull/4295) | Explorer API comprehensive input validation + schema tolerance | 8 |
+| [#4385](https://github.com/Scottcjn/Rustchain/pull/4385) | Airdrop claim comprehensive type validation (boolean/NaN rejection) | 8 |
+| [#4390](https://github.com/Scottcjn/Rustchain/pull/4390) | Governance signature + field type validation | 8 |
+| [#4395](https://github.com/Scottcjn/Rustchain/pull/4395) | GPU render API comprehensive type validation | 8 |
+| [#4210](https://github.com/Scottcjn/Rustchain/pull/4210) | TLS config via shared ssl_context (removed unverified context) | 5 |
+| [#4345](https://github.com/Scottcjn/Rustchain/pull/4345) | Contract API JSON object validation | 5 |
+| [#4355](https://github.com/Scottcjn/Rustchain/pull/4355) | Passport API JSON validation + mempool table tolerance | 5 |
+| [#4360](https://github.com/Scottcjn/Rustchain/pull/4360) | Relic API JSON + limit validation | 5 |
+| [#4370](https://github.com/Scottcjn/Rustchain/pull/4370) | BCOS badge generation input validation | 5 |
+| [#4320](https://github.com/Scottcjn/Rustchain/pull/4320) | Governance pagination input validation | 3 |
+| [#4330](https://github.com/Scottcjn/Rustchain/pull/4330) | Hall of Fame limit validation | 3 |
+| [#4220](https://github.com/Scottcjn/Rustchain/pull/4220) | Rust miner SIGTERM graceful shutdown | 3 |
+| [#4310](https://github.com/Scottcjn/Rustchain/pull/4310) | Rust miner state backup/restore | 3 |
+| [#4305](https://github.com/Scottcjn/Rustchain/pull/4305) | Mining troubleshooting documentation | 3 |
+
+**Batch 20 Subtotal: ~109 RTC (17 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-18 (May 21-22) | 189 | ~1441 |
+| Batch 19 (May 22) | 28 | ~208 |
+| Batch 20 (May 22) | 17 | ~109 |
+| **Grand Total** | **396** | **~2825 RTC ~$283 USD** |
