@@ -715,3 +715,52 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-17 (May 21-22) | 172 | ~1307 |
 | Batch 18 (May 22) | 17 | ~134 |
 | **Grand Total** | **351** | **~2508 RTC ~$251 USD** |
+
+
+---
+
+## Batch 19 — May 22 Historical Scan 4400-4600 (28 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#4525](https://github.com/Scottcjn/Rustchain/pull/4525) | Beacon API Ed25519 agent authentication (nonce + replay prevention) | 15 |
+| [#4530](https://github.com/Scottcjn/Rustchain/pull/4530) | Fingerprint features pickle→JSON migration (RCE prevention) | 15 |
+| [#4585](https://github.com/Scottcjn/Rustchain/pull/4585) | GPU render admin key auth on escrow/release/refund | 15 |
+| [#4565](https://github.com/Scottcjn/Rustchain/pull/4565) | Ledger API amount_rtc validation (NaN/Infinity/boolean rejection) | 12 |
+| [#4580](https://github.com/Scottcjn/Rustchain/pull/4580) | BCOS commitment hmac.compare_digest timing-safe | 12 |
+| [#4590](https://github.com/Scottcjn/Rustchain/pull/4590) | Beacon coinbase address immutability | 10 |
+| [#4415](https://github.com/Scottcjn/Rustchain/pull/4415) | Admin OUI denylist JSON + type validation | 8 |
+| [#4425](https://github.com/Scottcjn/Rustchain/pull/4425) | BFT propose JSON + type validation | 8 |
+| [#4430](https://github.com/Scottcjn/Rustchain/pull/4430) | Node API JSON object validation on all POST endpoints | 8 |
+| [#4465](https://github.com/Scottcjn/Rustchain/pull/4465) | Machine passport XSS sanitization | 8 |
+| [#4475](https://github.com/Scottcjn/Rustchain/pull/4475) | Governance page XSS escaping | 8 |
+| [#4485](https://github.com/Scottcjn/Rustchain/pull/4485) | Setup wizard XSS escaping | 8 |
+| [#4490](https://github.com/Scottcjn/Rustchain/pull/4490) | Miner dashboard XSS prevention | 8 |
+| [#4495](https://github.com/Scottcjn/Rustchain/pull/4495) | Leaderboard XSS prevention | 8 |
+| [#4570](https://github.com/Scottcjn/Rustchain/pull/4570) | GitHub webhook payload type validation | 8 |
+| [#4540](https://github.com/Scottcjn/Rustchain/pull/4540) | Airdrop username casefold normalization | 5 |
+| [#4550](https://github.com/Scottcjn/Rustchain/pull/4550) | Beacon memory API input validation | 5 |
+| [#4555](https://github.com/Scottcjn/Rustchain/pull/4555) | Fleet limit validation | 5 |
+| [#4560](https://github.com/Scottcjn/Rustchain/pull/4560) | Relic JSON object validation | 5 |
+| [#4515](https://github.com/Scottcjn/Rustchain/pull/4515) | Faucet drip input validation | 5 |
+| [#4405](https://github.com/Scottcjn/Rustchain/pull/4405) | BCOS attest JSON validation | 5 |
+| [#4450](https://github.com/Scottcjn/Rustchain/pull/4450) | Installer checksum multi-artifact verification | 5 |
+| [#4435](https://github.com/Scottcjn/Rustchain/pull/4435) | Ergo anchor connection leak fix | 3 |
+| [#4440](https://github.com/Scottcjn/Rustchain/pull/4440) | Miner checksum manifest test | 3 |
+| [#4500](https://github.com/Scottcjn/Rustchain/pull/4500) | Explorer API input validation tests | 3 |
+| [#4510](https://github.com/Scottcjn/Rustchain/pull/4510) | Sophia inspector positive int validation | 3 |
+| [#4535](https://github.com/Scottcjn/Rustchain/pull/4535) | WSGI mock signature guard | 3 |
+| [#4595](https://github.com/Scottcjn/Rustchain/pull/4595) | Hall of Fame current UTC year | 3 |
+
+**Batch 19 Subtotal: ~208 RTC (28 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-18 (May 21-22) | 189 | ~1441 |
+| Batch 19 (May 22) | 28 | ~208 |
+| **Grand Total** | **379** | **~2716 RTC ~$272 USD** |
