@@ -606,3 +606,38 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Batch 3-14 (May 21-22) | 135 | ~993 |
 | Batch 15 (May 22) | 8 | ~66 |
 | **Grand Total** | **305** | **~2126 RTC ~$213 USD** |
+
+
+---
+
+## Batch 16 — May 22 Historical Scan 5000-5200 (14 reviews)
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5060](https://github.com/Scottcjn/Rustchain/pull/5060) | RIP-305 Bridge API (lock-mint wRTC) | 15 |
+| [#5070](https://github.com/Scottcjn/Rustchain/pull/5070) | Boot chime admin auth (HMAC timing-safe) | 15 |
+| [#5080](https://github.com/Scottcjn/Rustchain/pull/5080) | Relationship mutation endpoints admin auth | 12 |
+| [#5085](https://github.com/Scottcjn/Rustchain/pull/5085) | Welcome bonus + balance management | 8 |
+| [#5105](https://github.com/Scottcjn/Rustchain/pull/5105) | P2P mTLS support (TLS 1.2, client cert) | 15 |
+| [#5130](https://github.com/Scottcjn/Rustchain/pull/5130) | RISC-V hardware attestation (SiFive, StarFive) | 8 |
+| [#5155](https://github.com/Scottcjn/Rustchain/pull/5155) | GPU/display relic badge detector tests | 3 |
+| [#5160](https://github.com/Scottcjn/Rustchain/pull/5160) | BCOS badge generator validator tests | 3 |
+| [#5165](https://github.com/Scottcjn/Rustchain/pull/5165) | Prometheus exporter tests | 3 |
+| [#5170](https://github.com/Scottcjn/Rustchain/pull/5170) | Network monitor CLI tests | 3 |
+| [#5175](https://github.com/Scottcjn/Rustchain/pull/5175) | Audio file upload type validation | 10 |
+| [#5185](https://github.com/Scottcjn/Rustchain/pull/5185) | Payout preflight validation tests | 5 |
+| [#5195](https://github.com/Scottcjn/Rustchain/pull/5195) | Beacon log envelope extraction tests | 3 |
+| [#5010](https://github.com/Scottcjn/Rustchain/pull/5010) | Agent Relationships Engine (BoTTube Beef) | 8 |
+
+**Batch 16 Subtotal: ~111 RTC (14 reviews)**
+
+---
+
+## Grand Total
+
+| Session | Reviews | Est. RTC |
+|---------|---------|----------|
+| Session 1-2 (May 20) | 162 | ~1067 |
+| Batch 3-15 (May 21-22) | 143 | ~1059 |
+| Batch 16 (May 22) | 14 | ~111 |
+| **Grand Total** | **319** | **~2237 RTC ~$224 USD** |
