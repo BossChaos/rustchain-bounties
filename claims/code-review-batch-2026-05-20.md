@@ -90,3 +90,41 @@ Standard PRs: [#5783](https://github.com/Scottcjn/Rustchain/pull/5783), [#5786](
 | Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
 | Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
 | **Grand Total** | **170** | **39** | **131** | **~1151 RTC ≈ $115 USD** |
+
+
+---
+
+## Batch 2 — May 21 Mid-Morning (7 reviews)
+
+### High-Value Security Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5754](https://github.com/Scottcjn/Rustchain/pull/5754) | EPOCH_COMMIT handler missing — plus voter list not filtered by vote type + STATE sync unverified epoch import | 20 |
+| [#5753](https://github.com/Scottcjn/Rustchain/pull/5753) | award_rtc wallet parser: format validation, ambiguous wallet detection, username fallback removed | 15 |
+| [#5714](https://github.com/Scottcjn/Rustchain/pull/5714) | P2P gossip payload bounds: 64KB/256keys/16depth/4KB string limits BEFORE signature work | 15 |
+| [#5721](https://github.com/Scottcjn/Rustchain/pull/5721) | Linux miner fingerprint: virtual interface/MAC filtering, fingerprint normalization | 10 |
+| [#5703](https://github.com/Scottcjn/Rustchain/pull/5703) | macOS miner MAC collection: networksetup parsing for stable hardware ports | 10 |
+
+**Batch 2 High-Value Subtotal: ~70 RTC (5 reviews)**
+
+### Standard Reviews
+
+| PR | Finding | Est. RTC |
+|----|---------|----------|
+| [#5735](https://github.com/Scottcjn/Rustchain/pull/5735) | Chinese (Simplified) README translation (+318 lines) | 3 |
+| [#5726](https://github.com/Scottcjn/Rustchain/pull/5726) | Complete live RustChain stats dashboard with auto-refresh | 3 |
+
+**Batch 2 Standard Subtotal: ~6 RTC (2 reviews)**
+
+---
+
+## Updated Grand Total
+
+| Session | Reviews | Security/High | Standard | Est. RTC |
+|---------|---------|-------------|----------|----------|
+| Session 1 (May 20 AM) | 52 | 8 | 44 | ~340 |
+| Session 2 (May 20 PM) | 110 | 25 | 85 | ~727 |
+| Session 3 (May 21 AM) | 8 | 6 | 2 | ~84 |
+| Batch 2 (May 21 mid-AM) | 7 | 5 | 2 | ~76 |
+| **Grand Total** | **177** | **44** | **133** | **~1227 RTC ≈ $123 USD** |
